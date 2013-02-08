@@ -19,9 +19,20 @@
 						<li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
 	                    
 					<% else %>
-						<li><%= link_to "Sign In", new_user_session_path %></li>
-	                    
+            <li><%= link_to "Contact Us", contact_path %></li>
+						
+
+<!-- 
+
+This "Sign in" link has been hidden temporarily to push site for informational purposes only.
+            <li><%= link_to "Sign In", new_user_session_path %></li>
+-->
+
+
 					<% end %>
+
+
+
 
                 </ul>
               </nav>
@@ -34,5 +45,14 @@
             <% end %>
             <%= yield %>
         </div>
+
+
+        <div class ="footer">
+  <small>
+    An affiliate of <%= link_to "Go West Creative", "http://gwcg.com" %>
+    Site by <%= link_to "Luther Moore", "#" %>
+  </small>
+</div>
+
     </body>
 </html>

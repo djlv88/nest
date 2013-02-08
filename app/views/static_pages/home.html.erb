@@ -1,8 +1,9 @@
 <% if user_signed_in? %>
-	<h1>You are signed in!</h1>
-	<br>
-	<h3>Welcome to your home page.  Please take a minute to explore our great content!
+	
 	<div class="center hero-unit">
+	<h2>You are signed in!</h2>
+	<br>
+	<h2>Welcome to your home page.  Please take a minute to explore our great content!</h2>
 
 		<iframe width="853" height="480" src="http://www.youtube.com/embed/HV4Dzx-oejY?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -11,27 +12,55 @@
 <% else %>
 
 <div class="center hero-unit">
-    <h1>Welcome to One Month Rails</h1>
+
+	<br><img src="http://i1287.photobucket.com/albums/a626/luther_moore/website_under_constructionlittle_zps0537d193.png"/><br><br>
+    <h1>Welcome to The NesT Development Studios!</h1>
 
     <h2>
-      You've found the home page for the
-      <a href="http://omrails.com/">One Month Rails</a>
-      first application.
+      Where your music career takes flight
     </h2>
 
-	<h3>
-	  Welcome to The NesT Development Studios, the next step in taking your music career to the next level!
-	</h3>
+    <align center>	<%= link_to "Contact Us", contact_path, class: "btn btn-large btn-inverted" %> </align>
+
+		<hr class="feature-divider" color = "black">
+
+<h5>What is The NesT?</h5><br>
+<h6>
+	The NesT Development Studios is a full service artist development company, supplying promising artists with the resources they need to take their careers as serious musicians to the next level.  With decades of time spent working in the business, The NesT team has gathered invaluable experience and a boutique collection of industry colleagues, all of which can be used to help artists navigate the unfamiliar territory of an industry that is constantly being refashioned.  Founded with the mission of fostering true talent, The NesT Development Studios aims to provide a flight plan for emerging artists to take their career to new heights while guiding them along the way. The process begins with an initial consultation meant to assess the artist’s current level of experience and determine the best course of action for that individual.  From there, the team at The NesT will put together a custom “flight plan” meant to both nurture the artist’s talent and push them to reach their full potential. 
+</h6>
+
+		<hr class="feature-divider" color = "black">
+
+
+<h4>So what is it you DO?</h4><br>
+
+<h3>
+	With an impressive web of resources and industry contacts, The NesT Development Studios offers career development consultation for talented entertainers and aspiring music industry professionals.  With a unique, strategic position within the entertainment industry, The NesT Development Studios often takes on the role of developing and producing television and film projects as well.  Simply put, The NesT is in the business of connecting the right talented people with the right resources and contacts to help them along the flight path of their career.  This can include a plethora of services ranging from vocal and performance coaching, to professional services like brand consultation and packaging for record labels.  Each client is unique and The NesT creates highly customized flight plans for each and every client in pursuit of creating both a challenging but nurturing experience.
+</h3>
+
+
+
+		<hr class="feature-divider" color = "black">
+
+<h5>What is happening at The NesT right now?</h5><br>
+
+<h6> 
+	The NesT is very fortunate to be collaborating with some of the most respected musicians and executives within the music industry.  With multiple exciting projects in incubation, we are striving to bring The NesT experience to as many talented entertainers as possible.  In order to do this we are currently hard at work building a BIGGER, BETTER nest that will soon live online and reach the best talent across the globe!  For more information, click that little button and get in touch with us.  We look forward to hearing from you!
+</h6>
+
+		<hr class="feature-divider" color = "black">
+
+<align center>	<%= link_to "Contact Us", contact_path, class: "btn btn-large btn-primary" %> </align>
+
+
+<!--  This "Sign up" button has been hidden temporarily to push site for informational purposes only.
 
     <%= link_to "Sign up now!", new_user_registration_path, 
                                 class: "btn btn-large btn-primary" %>
+
+ -->
 </div>
 
-<div class="center hero-unit">
-
-	<iframe width="853" height="480" src="http://www.youtube.com/embed/HV4Dzx-oejY?rel=0" frameborder="0" allowfullscreen></iframe>
-
-</div>
 
 
 <% end %>
